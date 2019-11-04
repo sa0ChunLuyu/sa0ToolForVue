@@ -1,0 +1,66 @@
+.sa0ElementCenter {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sa0Width100 {
+    width: 100%;
+}
+
+.sa0Width50 {
+    width: 50%;
+}
+
+.sa0DisplayInlineBlock {
+    display: inline-block;
+}
+
+.sa0BackgroundRed {
+    background: #F43F3D;
+}
+
+.sa0BackgroundGreen {
+    background: #39B54A;
+}
+
+.sa0BackgroundOrange {
+    background: #FF9700;
+}
+
+.sa0BackgroundBlue {
+    background: #0081FF;
+}
+
+.sa0FloatRight {
+    float: right;
+}
+
+.sa0FloatLeft {
+    float: left;
+}
+
+.sa0TextLeft {
+    text-align: left;
+}
+
+.sa0LineHeight {
+    line-height: 1;
+}
+
+.sa0RoundPill {
+    border-radius: 9999999rem;
+}
+
+.sa0Border {
+    border: solid 1px #333333;
+}
+
+.sa0PositionAbsolute {
+    position: absolute;
+}
+
+.sa0ZIndex100 {
+    z-index: 100;
+}
+
