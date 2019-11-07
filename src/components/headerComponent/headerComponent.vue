@@ -65,6 +65,8 @@
     }
 
     .headerComponentContainer {
+        z-index: 100;
+        background: #ffffff;
         height: 3rem;
         line-height: 3rem;
     }

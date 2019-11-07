@@ -8,7 +8,10 @@
                 <headerComponent v-if="!loadingPageShow"></headerComponent>
             </div>
             <div class="sa0Wrapper">
-                <router-view v-if="!loadingPageShow"/>
+                <div class="sa0Container">
+                    <router-view v-if="!loadingPageShow"/>
+
+                </div>
             </div>
         </div>
     </div>
@@ -50,6 +53,10 @@
 <style scoped>
     * {
         /*background: rgba(168, 127, 100, 0.28);*/
+    }
+
+    body {
+        background: #ffffff !important;
     }
 
     #app {

@@ -11,6 +11,7 @@
 
 .sa0Container {
     margin: 0 auto;
+    padding: 0 10px;
     max-width: 1200px;
 }
 
@@ -24,6 +25,10 @@
 
 .sa0DisplayInlineBlock {
     display: inline-block;
+}
+
+.sa0TextWhite {
+    color: #ffffff;
 }
 
 .sa0BgWhite {
@@ -60,6 +65,38 @@
 
 .sa0BgLittleBlue {
     background: #5d61ff;
+}
+
+.sa0BgPalePinkishGrey {
+    background: #edd1d8;
+}
+
+.sa0BgRem {
+    background: #91bef0;
+}
+
+.sa0BgRam {
+    background: #efa5b5;
+}
+
+.sa0BgEmilia {
+    background: #f3f3f3;
+}
+
+.sa0BgAsuna {
+    background: #e2b282;
+}
+
+.sa0BgEugeo {
+    background: #eac989;
+}
+
+.sa0BgKirito {
+    background: #3c3f39;
+}
+
+.sa0BgAlice {
+    background: #f0d681;
 }
 
 .sa0FR {
@@ -104,6 +141,10 @@
 
 .sa0CursorPointer {
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .sa0ZIndex100 {
@@ -150,3 +191,17 @@
     box-shadow: 0 0 .5rem #a3a3a3;
 }
 
+.sa0MY20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sa0PY10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sa0MY10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
