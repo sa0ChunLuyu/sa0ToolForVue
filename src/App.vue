@@ -2,7 +2,15 @@
     <div id="app">
         <loadingPage :handleLoadingPageCloseButtonClick="handleLoadingPageCloseButtonClick"
                      v-if="loadingPageShow"></loadingPage>
-        <router-view v-if="!loadingPageShow"/>
+
+        <div>
+            <div class="sa0BackgroundWhite">
+                <headerComponent v-if="!loadingPageShow"></headerComponent>
+            </div>
+            <div class="sa0Wrapper">
+                <router-view v-if="!loadingPageShow"/>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -12,10 +20,11 @@
      * @time: 2019/11/1 7:45 下午
      */
     import loadingPage from '@/views/loadingPage/loadingPage';
+    import headerComponent from "./components/headerComponent/headerComponent";
 
     export default {
         name: "App",
-        components: {loadingPage},
+        components: {loadingPage, headerComponent},
         props: [],
         data: () => ({
             loadingPageShow: true,
@@ -29,7 +38,7 @@
             systemAutoLoadingPageClose() {
                 setTimeout(() => {
                     if (this.loadingPageShow) this.handleLoadingPageCloseButtonClick();
-                }, 1000);
+                }, 5000);
             }
         },
         mounted() {
@@ -44,5 +53,6 @@
     }
 
     #app {
+        color: #2f2f2f;
     }
 </style>

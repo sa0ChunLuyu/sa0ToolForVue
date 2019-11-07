@@ -9,7 +9,7 @@
                     {{loadingPageInfo.content}}
                 </div>
                 <div class="loadingPageFooterContainer sa0TextLeft sa0PositionAbsolute">
-                    <div>{{loadingPageInfo.power}} {{loadingPageInfo.version}} x {{loadingPageInfo.author}}</div>
+                    <div>{{loadingPageInfo.power}} {{loadingPageInfo.version}}</div>
                     <div>{{loadingPageInfo.title}}</div>
                 </div>
             </div>

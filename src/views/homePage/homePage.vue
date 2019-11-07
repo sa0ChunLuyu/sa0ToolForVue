@@ -1,9 +1,14 @@
 <template>
     <div class="homePage">
         <div class="homePageWrapper">
-            <div class="homePageContainer sa0TextLeft">
-                <div class="sa0DisplayInlineBlock sa0Width50 sa0BackgroundGreen">1</div>
-                <div class="sa0DisplayInlineBlock sa0Width50 sa0BackgroundRed">1</div>
+            <div class="homePageContainer">
+                <div class="sa0ElementCenter sa0PositionAbsolute">
+                    <h1>COMING SOON</h1>
+                </div>
+                <div class="homePageFooterContainer sa0PositionAbsolute sa0Left sa0Right">
+                    <div>{{homePageInfo.power}} {{homePageInfo.version}} x {{homePageInfo.author}}</div>
+                    <div>{{homePageInfo.title}}</div>
+                </div>
             </div>
         </div>
     </div>
@@ -45,5 +50,9 @@
 
     .homePageContainer {
 
+    }
+
+    .homePageFooterContainer{
+        bottom: 2rem;
     }
 </style>

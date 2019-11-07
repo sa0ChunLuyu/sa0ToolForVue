@@ -10,11 +10,21 @@ const routes = [
         name: 'home',
         component: Home
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import('../views/About.vue')
-    // }
+    {
+      path: '/element/:part',
+      name: 'element',
+      component: () => import('../views/elementPage/elementPage.vue')
+    },
+    {
+      path: '/component/:part',
+      name: 'component',
+      component: () => import('../views/componentPage/componentPage.vue')
+    },
+    {
+      path: '/tool/:part',
+      name: 'tool',
+      component: () => import('../views/toolPage/toolPage.vue')
+    }
 ];
 
 const router = new VueRouter({

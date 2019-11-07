@@ -4,6 +4,16 @@
     transform: translate(-50%, -50%);
 }
 
+.sa0Wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.sa0Container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .sa0Width100 {
     width: 100%;
 }
@@ -16,32 +26,56 @@
     display: inline-block;
 }
 
-.sa0BackgroundRed {
-    background: #F43F3D;
+.sa0BgWhite {
+    background: #ffffff;
 }
 
-.sa0BackgroundGreen {
-    background: #39B54A;
+.sa0BgBlack {
+    background: #2f2f2f;
 }
 
-.sa0BackgroundOrange {
-    background: #FF9700;
+.sa0BgYellow {
+    background: #ffd83c;
 }
 
-.sa0BackgroundBlue {
-    background: #0081FF;
+.sa0BgRed {
+    background: #e53e3e;
 }
 
-.sa0FloatRight {
+.sa0BgGreen {
+    background: #52ba3d;
+}
+
+.sa0BgOrange {
+    background: #ff983c;
+}
+
+.sa0BgCyan {
+    background: #3acdcb;
+}
+
+.sa0BgBlue {
+    background: #4646ff;
+}
+
+.sa0BgLittleBlue {
+    background: #5d61ff;
+}
+
+.sa0FR {
     float: right;
 }
 
-.sa0FloatLeft {
+.sa0FL {
     float: left;
 }
 
 .sa0TextLeft {
     text-align: left;
+}
+
+.sa0TextCenter {
+    text-align: center;
 }
 
 .sa0LineHeight {
@@ -60,7 +94,59 @@
     position: absolute;
 }
 
+.sa0PositionFixed {
+    position: fixed;
+}
+
+.sa0PositionRelative {
+    position: relative;
+}
+
+.sa0CursorPointer {
+    cursor: pointer;
+}
+
 .sa0ZIndex100 {
     z-index: 100;
+}
+
+.sa0TextBold {
+    font-weight: bold;
+}
+
+.sa0Top {
+    top: 0;
+}
+
+.sa0Bottom {
+    top: 0;
+}
+
+.sa0Left {
+    left: 0;
+}
+
+.sa0Right {
+    right: 0;
+}
+
+.sa0DisplayBlock {
+    display: block;
+}
+
+.sa0BorderBottom {
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.sa0Shadow {
+    box-shadow: 0 0 1rem #a3a3a3;
+}
+
+.sa0ShadowB {
+    box-shadow: 0 0 2rem #a3a3a3;
+}
+
+.sa0ShadowS {
+    box-shadow: 0 0 .5rem #a3a3a3;
 }
 
