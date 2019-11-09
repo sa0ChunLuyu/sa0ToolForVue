@@ -10,6 +10,6 @@ export default {
         title: 'HAPPY HACKING',
         power: 'sa0Tool',
         version: 'VUE',
-        author: 'sa0ChunLuyu panxinyi503 猪二狗'
+        author: 'sa0ChunLuyu panxinyi503 猪二狗 木易风'
     },
 }

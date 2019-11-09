@@ -1,8 +1,1 @@
-.sa0Button {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
-}
+@import "./element/color.css";

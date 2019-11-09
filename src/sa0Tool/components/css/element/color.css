@@ -1,0 +1,149 @@
+.sa0TextWhite {
+    color: #ffffff;
+}
+
+.sa0BgWhite {
+    background: #ffffff;
+}
+
+
+.sa0TextBlack {
+    color: #2f2f2f;
+}
+
+.sa0TextYellow {
+    color: #ffd83c;
+}
+
+.sa0TextRed {
+    color: #e53e3e;
+}
+
+.sa0TextGreen {
+    color: #52ba3d;
+}
+
+.sa0TextOrange {
+    color: #ff983c;
+}
+
+.sa0TextCyan {
+    color: #3acdcb;
+}
+
+.sa0TextBlue {
+    color: #4646ff;
+}
+
+.sa0TextLittleBlue {
+    color: #5d61ff;
+}
+
+.sa0TextPalePinkishGrey {
+    color: #edd1d8;
+}
+
+.sa0TextRem {
+    color: #91bef0;
+}
+
+.sa0TextRam {
+    color: #efa5b5;
+}
+
+.sa0TextEmilia {
+    color: #f3f3f3;
+}
+
+.sa0TextAsuna {
+    color: #e2b282;
+}
+
+.sa0TextEugeo {
+    color: #eac989;
+}
+
+.sa0TextKirito {
+    color: #3c3f39;
+}
+
+.sa0TextAlice {
+    color: #f0d681;
+}
+
+
+.sa0BgBlack {
+    background: #2f2f2f;
+}
+
+.sa0BgYellow {
+    background: #ffd83c;
+}
+
+.sa0BgRed {
+    background: #e53e3e;
+}
+
+.sa0BgGreen {
+    background: #52ba3d;
+}
+
+.sa0BgOrange {
+    background: #ff983c;
+}
+
+.sa0BgCyan {
+    background: #3acdcb;
+}
+
+.sa0BgBlue {
+    background: #4646ff;
+}
+
+.sa0BgLittleBlue {
+    background: #5d61ff;
+}
+
+.sa0BgPalePinkishGrey {
+    background: #edd1d8;
+}
+
+.sa0BgRem {
+    background: #91bef0;
+}
+
+.sa0BgRam {
+    background: #efa5b5;
+}
+
+.sa0BgEmilia {
+    background: #f3f3f3;
+}
+
+.sa0BgAsuna {
+    background: #e2b282;
+}
+
+.sa0BgEugeo {
+    background: #eac989;
+}
+
+.sa0BgKirito {
+    background: #3c3f39;
+}
+
+.sa0BgAlice {
+    background: #f0d681;
+}
+
+.sa0BgO2Y {
+    background-image: linear-gradient(135deg, #ffa8a8 0%, #fcff00 100%);
+}
+
+.sa0BgB2G {
+    background-image: linear-gradient(135deg, #90f7ec 0%, #32ccbc 100%);
+}
+
+.sa0BgO2R {
+    background-image: linear-gradient(135deg, #fff6b7 0%, #f6416c 100%);
+}

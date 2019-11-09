@@ -2,12 +2,25 @@
     <div class="colorPage">
         <div class="colorPageWrapper">
             <div class="colorPageContainer">
+                <h1>背景色</h1>
                 <div class="backgroundListItem" v-for="(backgroundListItem,backgroundListIndex) in backgroundList">
                     <h2>{{backgroundListItem.title}}</h2>
-                    <div class="sa0MY20 sa0PY10 backgroundItem sa0ShadowS" :class="backgroundItem.class"
+                    <div class="sa0MY20 sa0PY10 backgroundItem sa0ShadowS sa0CursorPointer"
+                         :class="backgroundItem.class"
+                         @click="handleBackgroundItemClick(backgroundItem.value)"
                          v-for="(backgroundItem,backgroundIndex) in backgroundListItem.data">
                         <span class="sa0PY10"
                               :class="backgroundItem.color?'sa0TextWhite':''">{{backgroundItem.name}} {{backgroundItem.class}} {{backgroundItem.value.toUpperCase()}}</span>
+                    </div>
+                </div>
+
+                <h1>文字颜色</h1>
+                <div class="backgroundListItem" v-for="(textColorListItem,textColorListIndex) in textColorList">
+                    <h2>{{textColorListItem.title}}</h2>
+                    <div class="sa0MY20 sa0PY10 textColorItem sa0ShadowS sa0CursorPointer"
+                         :class="textColorItem.color?'sa0BgWhite':'sa0BgBlack'"
+                         v-for="(textColorItem,textColorIndex) in textColorListItem.data">
+                        <span class="sa0PY10" :class="textColorItem.class">{{textColorItem.name}} {{textColorItem.class}} {{textColorItem.value.toUpperCase()}}</span>
                     </div>
                 </div>
             </div>
@@ -25,6 +38,88 @@
         components: {},
         props: [],
         data: () => ({
+            textColorList: [{
+                title: '基础',
+                data: [{
+                    name: '红色',
+                    class: 'sa0TextRed',
+                    value: '#e53e3e',
+                }, {
+                    name: '橙色',
+                    class: 'sa0TextOrange',
+                    value: '#ff983c',
+                }, {
+                    name: '黄色',
+                    class: 'sa0TextYellow',
+                    value: '#ffd83c',
+                }, {
+                    name: '绿色',
+                    class: 'sa0TextGreen',
+                    value: '#52ba3d',
+                }, {
+                    name: '青色',
+                    class: 'sa0TextCyan',
+                    value: '#3acdcb',
+                }, {
+                    name: '蓝色',
+                    class: 'sa0TextBlue',
+                    value: '#4646ff',
+                    color: true,
+                }, {
+                    name: '黑色',
+                    class: 'sa0TextBlack',
+                    value: '#2f2f2f',
+                    color: true,
+                }, {
+                    name: '白色',
+                    class: 'sa0TextWhite',
+                    value: '#ffffff',
+                }]
+            }, {
+                title: '扩展',
+                data: [{
+                    name: '偏蓝',
+                    class: 'sa0TextLittleBlue',
+                    value: '#5d61ff',
+                    color: true,
+                }, {
+                    name: '藕粉',
+                    class: 'sa0TextPalePinkishGrey',
+                    value: '#edd1d8',
+                }]
+            }, {
+                title: '动漫',
+                data: [{
+                    name: '雷姆',
+                    class: 'sa0TextRem',
+                    value: '#91bef0',
+                }, {
+                    name: '拉姆',
+                    class: 'sa0TextRam',
+                    value: '#efa5b5',
+                }, {
+                    name: '爱蜜莉雅',
+                    class: 'sa0TextEmilia',
+                    value: '#f3f3f3',
+                }, {
+                    name: '桐人',
+                    class: 'sa0TextKirito',
+                    value: '#3c3f39',
+                    color: true,
+                }, {
+                    name: '亚丝娜',
+                    class: 'sa0TextAsuna',
+                    value: '#e2b282',
+                }, {
+                    name: '尤吉欧',
+                    class: 'sa0TextEugeo',
+                    value: '#eac989',
+                }, {
+                    name: '爱丽丝',
+                    class: 'sa0TextAlice',
+                    value: '#f0d681',
+                }]
+            }],
             backgroundList: [{
                 title: '基础',
                 data: [{
@@ -78,6 +173,17 @@
                     value: '#edd1d8',
                 }]
             }, {
+                title: '渐变',
+                data: [{
+                    name: '橙黄小清新',
+                    class: 'sa0BgO2Y',
+                    value: 'linear-gradient(135deg, #ffa8a8 0%, #fcff00 100%)',
+                }, {
+                    name: '蓝绿渐变',
+                    class: 'sa0BgB2G',
+                    value: 'linear-gradient(135deg, #90f7ec 0%, #32ccbc 100%)',
+                }]
+            }, {
                 title: '动漫',
                 data: [{
                     name: '雷姆',
@@ -111,9 +217,25 @@
                 }]
             }]
         }),
+        beforeDestroy() {
+            document.body.style.backgroundColor = '#ffffff';
+        },
         computed: {},
         watch: {},
-        methods: {},
+        methods: {
+            handleBackgroundItemClick(value) {
+                if (value.length > 7) return;
+                let color = document.body.style.backgroundColor;
+                color = color.split('(')[1];
+                color = color.split(')')[0];
+                color = color.split(',');
+                for (let i in color) {
+                    color[i] = parseInt(color[i]).toString(16);
+                }
+                color = '#' + color[0] + color[1] + color[2];
+                color === value ? document.body.style.backgroundColor = '#ffffff' : document.body.style.backgroundColor = value;
+            },
+        },
         mounted() {
         }
     }
@@ -136,12 +258,29 @@
     }
 
     .backgroundListItem {
-        margin-bottom: 60px;
+        margin-bottom: 4rem;
     }
 
     .backgroundItem {
         overflow: hidden;
-        border-radius: 5px;
-        padding-left: 10px;
+        border-radius: 0.3rem;
+        padding-left: 1rem;
+    }
+
+    .textColorItem {
+        font-weight: 600;
+        width: 30%;
+        margin-right: 1rem;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 0.3rem;
+        padding-left: 1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .textColorItem {
+            width: 40%;
+            height: 3rem;
+        }
     }
 </style>
