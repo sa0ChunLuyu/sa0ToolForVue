@@ -5,12 +5,13 @@
                 <div class="asideContainer sa0TextLeft sa0PositionFixed">
                     <div class="leftNavTitle">资源</div>
                     <div @click="routerPush(leftNavItem.value)"
-                         class="leftNavItem sa0CursorPointer" :class="partData===leftNavItem.value?'leftNavActive':''" v-for="(leftNavItem ,leftNavIndex) in leftNavList">
+                         class="leftNavItem sa0CursorPointer" :class="partData===leftNavItem.value?'leftNavActive':''"
+                         v-for="(leftNavItem ,leftNavIndex) in leftNavList">
                         <span>{{leftNavItem.title}}</span>
                         <span class="sa0DisplayInlineBlock">{{leftNavItem.name}}</span>
                     </div>
                 </div>
-                <div class="elementPageContentContainer sa0TextLeft sa0FR">
+                <div class="elementPageContentContainer sa0TextLeft">
                     <colorPage v-if="partData==='color'"></colorPage>
                     <containerPage v-if="partData==='container'"></containerPage>
                     <cssPage v-if="partData==='css'"></cssPage>
@@ -120,50 +121,63 @@
 
     }
 
+
     .asideContainer {
-        padding-right: 40px;
+        padding-right: 2.5rem;
         border-right: 1px solid rgba(51, 51, 51, 0.53);
     }
 
     .leftNavTitle {
-        font-size: 20px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .elementPageContentContainer {
-        width: 1000px;
-        margin-top: 30px;
+        margin-left: 10rem;
+        margin-top: 3rem;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        .asideContainer {
+            position: relative;
+        }
+
+        .elementPageContentContainer {
+            margin-left: 0;
+        }
     }
 
     .leftNavItem {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         position: relative;
     }
 
-    .leftNavItem:after{
+    .leftNavItem:after {
         content: '';
         position: absolute;
         background: #ffffff;
-        width: 5px;
+        width: .3rem;
         height: 100%;
-        right: -30px;
+        right: -2rem;
         transition: background-color .5s;
         border-radius: 9999px;
     }
 
-    .leftNavItem:hover:after{
+    .leftNavItem:hover:after {
         background: #000;
     }
 
-    .leftNavActive:after{
+    .leftNavActive:after {
         content: '';
         position: absolute;
         background: #000;
-        width: 5px;
+        width: .3rem;
         height: 100%;
-        right: -30px;
+        right: -2rem;
         border-radius: 9999px;
     }
 </style>

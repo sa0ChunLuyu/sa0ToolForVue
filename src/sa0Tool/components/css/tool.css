@@ -27,77 +27,7 @@
     display: inline-block;
 }
 
-.sa0TextWhite {
-    color: #ffffff;
-}
 
-.sa0BgWhite {
-    background: #ffffff;
-}
-
-.sa0BgBlack {
-    background: #2f2f2f;
-}
-
-.sa0BgYellow {
-    background: #ffd83c;
-}
-
-.sa0BgRed {
-    background: #e53e3e;
-}
-
-.sa0BgGreen {
-    background: #52ba3d;
-}
-
-.sa0BgOrange {
-    background: #ff983c;
-}
-
-.sa0BgCyan {
-    background: #3acdcb;
-}
-
-.sa0BgBlue {
-    background: #4646ff;
-}
-
-.sa0BgLittleBlue {
-    background: #5d61ff;
-}
-
-.sa0BgPalePinkishGrey {
-    background: #edd1d8;
-}
-
-.sa0BgRem {
-    background: #91bef0;
-}
-
-.sa0BgRam {
-    background: #efa5b5;
-}
-
-.sa0BgEmilia {
-    background: #f3f3f3;
-}
-
-.sa0BgAsuna {
-    background: #e2b282;
-}
-
-.sa0BgEugeo {
-    background: #eac989;
-}
-
-.sa0BgKirito {
-    background: #3c3f39;
-}
-
-.sa0BgAlice {
-    background: #f0d681;
-}
 
 .sa0FR {
     float: right;
@@ -192,16 +122,25 @@
 }
 
 .sa0MY20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .sa0PY10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .sa0MY10 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sa0Button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
 }

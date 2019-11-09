@@ -2,7 +2,6 @@
     <div id="app">
         <loadingPage :handleLoadingPageCloseButtonClick="handleLoadingPageCloseButtonClick"
                      v-if="loadingPageShow"></loadingPage>
-
         <div>
             <div class="sa0BackgroundWhite">
                 <headerComponent v-if="!loadingPageShow"></headerComponent>
@@ -10,7 +9,6 @@
             <div class="sa0Wrapper">
                 <div class="sa0Container">
                     <router-view v-if="!loadingPageShow"/>
-
                 </div>
             </div>
         </div>
@@ -41,11 +39,13 @@
             systemAutoLoadingPageClose() {
                 setTimeout(() => {
                     if (this.loadingPageShow) this.handleLoadingPageCloseButtonClick();
-                }, 5000);
+                }, 0);
             }
         },
         mounted() {
             this.systemAutoLoadingPageClose();
+            document.body.style.backgroundColor = '#ffffff';
+            document.body.style.color = '#2f2f2f';
         }
     }
 </script>
@@ -55,11 +55,6 @@
         /*background: rgba(168, 127, 100, 0.28);*/
     }
 
-    body {
-        background: #ffffff !important;
-    }
-
     #app {
-        color: #2f2f2f;
     }
 </style>
