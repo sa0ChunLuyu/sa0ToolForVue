@@ -1,0 +1,32 @@
+.sa0IconBack:after {
+    content: '返';
+}
+
+.sa0IconAdd:after {
+    content: '加';
+}
+
+.sa0IconLoading:after {
+    content: '加';
+}
+
+.sa0IconLoading {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.sa0IconHome:after {
+    content: '家';
+}
+
+.sa0IconUser:after {
+    content: '人';
+}

@@ -2,7 +2,7 @@
     <div class="colorPage">
         <div class="colorPageWrapper">
             <div class="colorPageContainer">
-                <h1>背景色</h1>
+                <h1>背景</h1>
                 <div class="backgroundListItem" v-for="(backgroundListItem,backgroundListIndex) in backgroundList">
                     <h2>{{backgroundListItem.title}}</h2>
                     <div class="sa0MY20 sa0PY10 backgroundItem sa0ShadowS sa0CursorPointer"
@@ -14,11 +14,11 @@
                     </div>
                 </div>
 
-                <h1>文字颜色</h1>
+                <h1>文字</h1>
                 <div class="backgroundListItem" v-for="(textColorListItem,textColorListIndex) in textColorList">
                     <h2>{{textColorListItem.title}}</h2>
-                    <div class="sa0MY20 sa0PY10 textColorItem sa0ShadowS sa0CursorPointer"
-                         :class="textColorItem.color?'sa0BgWhite':'sa0BgBlack'"
+                    <div class="sa0MY20 sa0PY10 textColorItem sa0CursorPointer"
+                         :class="textColorItem.color?'sa0BgBlack':'sa0BgWhite'"
                          v-for="(textColorItem,textColorIndex) in textColorListItem.data">
                         <span class="sa0PY10" :class="textColorItem.class">{{textColorItem.name}} {{textColorItem.class}} {{textColorItem.value.toUpperCase()}}</span>
                     </div>
@@ -64,16 +64,15 @@
                     name: '蓝色',
                     class: 'sa0TextBlue',
                     value: '#4646ff',
-                    color: true,
                 }, {
                     name: '黑色',
                     class: 'sa0TextBlack',
                     value: '#2f2f2f',
-                    color: true,
                 }, {
                     name: '白色',
                     class: 'sa0TextWhite',
                     value: '#ffffff',
+                    color: true,
                 }]
             }, {
                 title: '扩展',
@@ -81,7 +80,6 @@
                     name: '偏蓝',
                     class: 'sa0TextLittleBlue',
                     value: '#5d61ff',
-                    color: true,
                 }, {
                     name: '藕粉',
                     class: 'sa0TextPalePinkishGrey',
@@ -101,11 +99,11 @@
                     name: '爱蜜莉雅',
                     class: 'sa0TextEmilia',
                     value: '#f3f3f3',
+                    color: true,
                 }, {
                     name: '桐人',
                     class: 'sa0TextKirito',
                     value: '#3c3f39',
-                    color: true,
                 }, {
                     name: '亚丝娜',
                     class: 'sa0TextAsuna',
@@ -268,19 +266,8 @@
     }
 
     .textColorItem {
-        font-weight: 600;
-        width: 30%;
-        margin-right: 1rem;
-        display: inline-block;
         overflow: hidden;
         border-radius: 0.3rem;
         padding-left: 1rem;
-    }
-
-    @media screen and (max-width: 800px) {
-        .textColorItem {
-            width: 40%;
-            height: 3rem;
-        }
     }
 </style>
