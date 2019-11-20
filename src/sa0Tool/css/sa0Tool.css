@@ -8,6 +8,8 @@
 @import "../lib/css/nunito.css";
 /* element */
 @import "../components/css/element.css";
+/* component */
+@import "../components/css/component.css";
 /* tool */
 @import "../components/css/tool.css";
 

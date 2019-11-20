@@ -5,6 +5,9 @@
 .sa0IconAdd:after {
     content: '加';
 }
+.sa0IconGmyFm:after {
+    content: '冲';
+}
 
 .sa0IconLoading:after {
     content: '加';

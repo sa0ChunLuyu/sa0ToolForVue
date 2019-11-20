@@ -13,10 +13,8 @@
                 </div>
                 <div class="elementPageContentContainer sa0TextLeft">
                     <colorPage v-if="partData==='color'"></colorPage>
-                    <containerPage v-if="partData==='container'"></containerPage>
                     <cssPage v-if="partData==='css'"></cssPage>
                     <iconPage v-if="partData==='icon'"></iconPage>
-                    <layoutPage v-if="partData==='layout'"></layoutPage>
                     <readmePage v-if="partData==='readme'"></readmePage>
                 </div>
             </div>
@@ -31,20 +29,16 @@
      */
 
     import colorPage from "./components/colorPage";
-    import containerPage from "./components/containerPage";
     import cssPage from "./components/cssPage";
     import iconPage from "./components/iconPage";
-    import layoutPage from "./components/layoutPage";
     import readmePage from "./components/readmePage";
 
     export default {
         name: "elementPage",
         components: {
             colorPage,
-            containerPage,
             cssPage,
             iconPage,
-            layoutPage,
             readmePage,
         },
         props: [],
@@ -67,19 +61,9 @@
                     id: 2,
                     value: 'icon',
                 }, {
-                    title: 'Layout',
-                    name: '布局',
-                    id: 3,
-                    value: 'layout',
-                }, {
-                    title: 'Container',
-                    name: '容器',
-                    id: 4,
-                    value: 'container',
-                }, {
                     title: 'CSS',
                     name: '样式',
-                    id: 5,
+                    id: 3,
                     value: 'css',
                 },
             ]

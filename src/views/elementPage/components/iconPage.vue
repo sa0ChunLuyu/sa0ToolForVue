@@ -4,9 +4,10 @@
             <div class="iconPageContainer">
                 <div>
                     <div v-for="(iconItem,iconIndex) in iconList" class="iconItemContainer">
-                        <div class="iconItem">
+                        <div class="iconItem sa0TextCenter">
                             <div class="iconItemValue" :class="iconItem.value"></div>
                             <div class="iconItemName">{{iconItem.name}}</div>
+                            <div class="iconItemName">{{iconItem.value}}</div>
                         </div>
                     </div>
                 </div>
@@ -40,6 +41,9 @@
             }, {
                 name: '加载',
                 value: 'sa0IconLoading'
+            }, {
+                name: '充值',
+                value: 'sa0IconGmyFm'
             }]
         }),
         computed: {},
@@ -67,8 +71,8 @@
     }
 
     .iconItemContainer {
-        width: 7rem;
-        height:7rem;
+        width: 7.5rem;
+        height: 7.5rem;
         padding: 1rem;
         display: inline-block;
     }
@@ -81,8 +85,8 @@
         border-radius: 1rem;
     }
 
-    .iconItemValue{
+    .iconItemValue {
         font-size: 2rem;
-        line-height: 5rem;
+        line-height: 4.8rem;
     }
 </style>

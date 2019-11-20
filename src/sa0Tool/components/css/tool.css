@@ -28,7 +28,6 @@
 }
 
 
-
 .sa0FR {
     float: right;
 }
@@ -51,6 +50,14 @@
 
 .sa0RoundPill {
     border-radius: 9999999rem;
+}
+
+.sa0RoundCircle {
+    border-radius: 50%;
+}
+
+.sa0RoundNone {
+    border-radius: 0;
 }
 
 .sa0Border {
@@ -101,6 +108,7 @@
     right: 0;
 }
 
+
 .sa0DisplayBlock {
     display: block;
 }
@@ -121,6 +129,11 @@
     box-shadow: 0 0 .5rem #a3a3a3;
 }
 
+.sa0MX5 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
 .sa0MY20 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -131,16 +144,16 @@
     padding-bottom: 1rem;
 }
 
+.sa0MY5 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 .sa0MY10 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.sa0Button {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    display: inline-block;
+.sa0Opacity50 {
+    opacity: .5;
 }
